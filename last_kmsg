@@ -1,0 +1,211 @@
+[    0.000000] sec_dbg_setup: str=@0x3ff00008
+[    0.000000] sec_dbg_setup: secdbg_paddr = 0x3ff00008
+[    0.000000] sec_dbg_setup: secdbg_size = 0x80000
+[    0.004518] set_dload_mode <0> ( c0e0ccf8 )
+[    0.004539] set_dload_mode <1> ( c0e0cd04 )
+[    0.046206] sec_debug_init: restart_reason_ddr_address : 0x0 
+[    0.046235] sec_debug_init: enable=0
+[    0.046252] sec_debug_init:__raw_readl restart_reason=0
+[    0.046273] sec_debug_init: restart_reason : 0xfa00a65c
+[    0.170356] qup_i2c f9924000.i2c: Missing 'qcom,master-id' DT entry
+[    0.171558] qup_i2c f9926000.i2c: Missing 'qcom,i2c-src-freq' DT entry
+[    0.178193] AXI: msm_bus_fabric_init_driver(): msm_bus_fabric_init_driver
+[    0.208868] ION-heap mm: Cannot specify alignment for this type of heap
+[    0.209167] ION-heap adsp: Cannot specify alignment for this type of heap
+[    0.619310] sec_therm_probe:ret=-517
+[    0.619547] sec_therm_probe:ret=-19
+[    0.619688] vadc property missing
+[    0.619817] printk_remap_nocache: sec_log_save_size 1048576 at sec_log_save_base 0x3fe00008
+[    0.619966] printk_remap_nocache: sec_log_reserve_size 1048584 at sec_log_reserve_base 0x3fe00000
+[    0.620301] Failed to remap nocache log region
+[    0.747699] spmi_pmic_arb fc4cf000.qcom,spmi: PPID 0xc2 incorrect owner 2
+[    0.747919] spmi_pmic_arb fc4cf000.qcom,spmi: PPID 0xc3 incorrect owner 2
+[    0.748267] spmi_pmic_arb fc4cf000.qcom,spmi: PPID 0xc7 incorrect owner 2
+[    0.748807] spmi_pmic_arb fc4cf000.qcom,spmi: PPID 0xa0 incorrect owner 4
+[    0.749150] spmi_pmic_arb fc4cf000.qcom,spmi: PPID 0xa4 incorrect owner 2
+[    0.749490] spmi_pmic_arb fc4cf000.qcom,spmi: PPID 0xa7 incorrect owner 2
+[    0.750585] mdss_mdp_parse_dt_prop_len: Error from prop qcom,mdss-ad-off : spec error in device tree
+[    0.752257] [ on state : 0, off state : 1
+[    0.752919] dsi_panel_device_register:1666, Disp_en_gpio (73)
+[    0.753007] dsi_panel_device_register:1832, Disp_te gpio not specified
+[    0.753228] dsi_panel_device_register:1838, Disp_rst_gpio (25)
+[    0.785808] mdss_dsi_event_handler: unhandled event=1
+[    0.820073] sps: BAM device 0xf9904000 is not registered yet.
+[    0.851684] cypress_request_gpio: unable to request touchkey_scl [66]
+[    0.934510] cypress_touchkey 21-0020: Touchkey FW Version: 0x06
+[    0.995514] mms_ts_probe: [TSP] probe START!!
+[    1.104299] qup_i2c f9927000.i2c: QUP: I2C status flags :0xc1300c8, irq:131
+[    1.104402] qup_i2c f9927000.i2c: I2C slave addr:0x48 not connected
+[    1.104592] qup_i2c f9927000.i2c: QUP: I2C status flags :0x81343c8, irq:131
+[    1.104753] qup_i2c f9927000.i2c: I2C slave addr:0x48 not connected
+[    1.104879] qup_i2c f9927000.i2c: QUP: I2C status flags :0x81343c8, irq:131
+[    1.105040] qup_i2c f9927000.i2c: I2C slave addr:0x48 not connected
+[    1.524632] mms144_ts 5-0048: [TSP] ISC Ver [0xc7] [0x23] [0x23]
+[    1.524778] mms144_ts 5-0048: [TSP] fw is latest. Do not update.
+[    1.524955] mms_ts_probe: tsp : gpio_to_irq : 339
+[    1.525362] mms_ts_probe: [TSP] probe END!!
+[    1.531612] cam_dummy_init_module:182
+[    1.531726] cam_dummy_platform_probe:87
+[    1.533637] csiphy_probe: device id = 0
+[    1.533863] csiphy_probe: device id = 1
+[    1.536973] msm_camera_request_gpio_table:529 invalid gpio_tbl   (null) / size 0
+[    1.552951] msm_camera_request_gpio_table:529 invalid gpio_tbl   (null) / size 0
+[    1.555595] __msm_jpeg_init:895] Jpeg Device id 0
+[    1.557346] stream_cnt:0
+[    1.557502] cpp_dbg: end of cpp_init_hardware
+[    1.559132] iris_radio: Cannot open the command channel
+[    1.559477] qpnp_charger_read_dt_props: read EXT_OVP gpio (438) 
+[    1.613463] qcom,leds-qpnp qpnp-charger-e8a28800: Unable to get LED base address
+[    1.613982] qcom,leds-qpnp leds-qpnp-e8a58c00: Regulator get failed(-517)
+[    1.614132] qcom,leds-qpnp leds-qpnp-e8a58c00: Unable to read flash config data
+[    1.614350] i2c i2c-23: an30259a_probe
+[    1.622903] QCE50: __qce_init_clk: Unable to get CE core clk
+[    1.622993] QCE50: __qce_init_clk: Unable to init CE clks, rc = -2
+[    1.626817] usb_bam_ipa_create_resources: Failed to create USB_PROD resource
+[    1.627661] cm36651_parse_dt complete, vdd_en:110 p_out:65 /efs/prox_cal
+[    1.724088] cm36651_setup_reg: initial proximity value = 1
+[    1.725713] mpu6500_parse_dt complete, SCL:7 SDA:6 IRQ:64
+[    1.725881] mpu6500_vdd_on: error vreg_2p8 setting voltage ret=-22
+[    1.895823] msm8226-asoc-tapan sound-9302.46: Property 'qcom,audio-routing' does not exist or its length is not even
+[    1.907742] **** secdbg_log or secdbg_paddr is not initialized ****
+[    1.909606] qcom,leds-qpnp leds-qpnp-e8a58c00: Regulator get failed(-517)
+[    1.909772] qcom,leds-qpnp leds-qpnp-e8a58c00: Unable to read flash config data
+[    1.909950] qpnp_charger_read_dt_props: read EXT_OVP gpio (438) 
+[    1.910349] qpnp_chg_ibatterm_set: bad mA=70 asked to set, setting 100mA instead
+[    1.910527] qpnp_chg_ibatterm_set: REG IBAT_TERM_CHGR(105b) : 8 
+[    1.910647] sec_jack_probe - defer as codec_probe_done is false
+[    1.911665] gpio-keys gpio_keys.82: [Keys] no regulator: ignoring
+[    1.912748] sec_debug_check_crash_key code 172 value 0 state 0 enable 0
+[    1.912949] sec_debug_check_crash_key code 114 value 0 state 0 enable 0
+[    1.913044] sec_debug_check_crash_key code 115 value 0 state 0 enable 0
+[    1.933614] get_prop_batt_temp: get_bat_temp: adc_code(31912) physical (333)
+[    1.934456] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[    1.945036] sec_bat_read_dt_props: sec_bat_read_dt_props:parsing device tree for SEC dt parameters 
+[    1.945262] qpnp_charger_probe: SEC battery device tree read SUCCESS : rc(0) 
+[    1.945440] qpnp_charger_probe: qpnp_charger_probe: initialize battery status(2) & health(1)
+[    1.945791] qpnp_batt_power_set_property: qpnp_batt_power_set_property: same cable, no change in cable type (0) 
+[    1.945908] qpnp_charger_probe: normal boot with cable_type(0)
+[    1.964934] get_prop_batt_temp: get_bat_temp: adc_code(31912) physical (333)
+[    1.976774] qpnp_chg_usb_usbin_valid_irq_handler: USB-IN triggered : usbin-valid voltage 
+[    1.977449] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[    1.978040] BMS: set_battery_data: battery capacity: 2100 mA
+[    2.009064] get_prop_batt_temp: get_bat_temp: adc_code(31910) physical (333)
+[    2.013434] get_prop_batt_temp: get_bat_temp: adc_code(31911) physical (333)
+[    2.053266] get_prop_batt_temp: get_bat_temp: adc_code(31910) physical (333)
+[    2.115012] get_prop_batt_temp: get_bat_temp: adc_code(31910) physical (333)
+[    2.119491] get_prop_batt_temp: get_bat_temp: adc_code(31909) physical (333)
+[    2.145994] get_prop_batt_temp: get_bat_temp: adc_code(31908) physical (333)
+[    2.154252] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[    2.154743] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[    2.168822] get_prop_batt_temp: get_bat_temp: adc_code(31909) physical (333)
+[    2.247668] power_supply bms: driver failed to report `current_avg' property: 4294967274
+[    2.248135] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[    2.263419] sec_jack_probe - defer as codec_probe_done is false
+[    2.319982] power_supply bms: driver failed to report `current_avg' property: 4294967274
+[    2.422609] get_prop_batt_temp: get_bat_temp: adc_code(31904) physical (333)
+[    2.463594] get_prop_batt_temp: get_bat_temp: adc_code(31904) physical (333)
+[    2.503892] get_prop_batt_temp: get_bat_temp: adc_code(31903) physical (334)
+[    3.022155] get_prop_batt_temp: get_bat_temp: adc_code(31894) physical (334)
+[    3.061950] get_prop_batt_temp: get_bat_temp: adc_code(31893) physical (335)
+[    3.101812] get_prop_batt_temp: get_bat_temp: adc_code(31892) physical (335)
+[    3.141608] get_prop_batt_temp: get_bat_temp: adc_code(31892) physical (335)
+[    3.193084] EXT4-fs (mmcblk0p26): couldn't mount as ext3 due to feature incompatibilities
+[    3.249654] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[    3.258713] power_supply bms: driver failed to report `current_avg' property: 4294967274
+[    3.615920] EXT4-fs (mmcblk0p26): couldn't mount as ext2 due to feature incompatibilities
+[    3.675339] EXT4-fs (mmcblk0p26): couldn't mount as ext3 due to feature incompatibilities
+[    3.684577] EXT4-fs (mmcblk0p26): couldn't mount as ext2 due to feature incompatibilities
+[    3.719594] EXT4-fs (loop0): couldn't mount as ext3 due to feature incompatibilities
+[    3.943960] sec_chg_time_management: discharging state! timer inactive
+[    3.961611] get_prop_batt_temp: get_bat_temp: adc_code(31880) physical (335)
+[    3.970478] get_prop_batt_temp: get_bat_temp: adc_code(31881) physical (335)
+[    3.970631] sec_bat_monitor: status(2), health(1), batt_present(1), cable(0), siop(100)
+[    3.970781] sec_bat_monitor: soc(100), vcell(4351), current(-70), temperature(335), chg_en(0)
+[    3.970935] sec_bat_monitor: ovp_uvlo(0), second_phase_chg(0), polling_time(60), event(0x0), HT(600), LT(-50)
+[    4.019180] get_prop_batt_temp: get_bat_temp: adc_code(31881) physical (335)
+[    4.059005] get_prop_batt_temp: get_bat_temp: adc_code(31881) physical (335)
+[    4.098936] get_prop_batt_temp: get_bat_temp: adc_code(31881) physical (335)
+[    4.138682] get_prop_batt_temp: get_bat_temp: adc_code(31879) physical (335)
+[    4.616127] sm5502 15-0025: dev1: 0x20,dev2: 0x0,dev3: 0x0,Carkit: 0x0,ADC: 0x1f,Jig: OFF
+[    4.616296] sm5502_callback CDP status attached (1) 
+[    4.616389] qpnp_batt_power_set_property: qpnp_batt_power_set_property: cable type changed (0) -> (8) 
+[    4.616549] sec_handle_cable_insertion_removal: chgpth_sts: 0x3
+[    4.616663] sec_handle_cable_insertion_removal: EXT OVP is on
+[    4.616817] sec_handle_cable_insertion_removal: Enable sec_bat_ext_ovp_work
+[    4.617016] sec_handle_cable_insertion_removal: USB Trim : 63
+[    4.617100] sec_handle_cable_insertion_removal: iusbmax : 1000000 
+[    4.617243] sec_handle_cable_insertion_removal: TA : SIOP change in current ibatmax_ma(MAX:2000)
+[    4.817352] sec_pm8226_start_charging: enable charging for cable type (8) 
+[    4.817502] sec_pm8226_start_charging: battery status changed to (1)
+[    4.817647] qpnp_chg_charge_en:  qpnp_chg_charge_en called with enable=1
+[    4.817776] sec_handle_cable_insertion_removal: battery status changed from (2)->(1)
+[    4.818055] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[    4.819264] sec_chg_time_management: Charging Time: 0 secs (rechg:0)
+[    4.885105] get_prop_batt_temp: get_bat_temp: adc_code(31875) physical (335)
+[    4.911453] get_prop_batt_temp: get_bat_temp: adc_code(31873) physical (335)
+[    4.937806] get_prop_batt_temp: get_bat_temp: adc_code(31873) physical (335)
+[    4.938020] sec_bat_monitor: first phase charging: ui_full_cnt(1)
+[    4.938104] sec_bat_monitor: status(1), health(1), batt_present(1), cable(8), siop(100)
+[    4.938325] sec_bat_monitor: soc(100), vcell(4352), current(-70), temperature(335), chg_en(1)
+[    4.938476] sec_bat_monitor: ovp_uvlo(0), second_phase_chg(0), polling_time(60), event(0x0), HT(600), LT(-50)
+[    4.994463] get_prop_batt_temp: get_bat_temp: adc_code(31872) physical (336)
+[    5.051240] get_prop_batt_temp: get_bat_temp: adc_code(31872) physical (336)
+[    5.059926] get_prop_batt_temp: get_bat_temp: adc_code(31871) physical (336)
+[    5.095269] get_prop_batt_temp: get_bat_temp: adc_code(31872) physical (336)
+[    5.130529] get_prop_batt_temp: get_bat_temp: adc_code(31870) physical (336)
+[    5.165907] get_prop_batt_temp: get_bat_temp: adc_code(31872) physical (336)
+[    5.201237] get_prop_batt_temp: get_bat_temp: adc_code(31870) physical (336)
+[    8.240196] EXT4-fs (loop1): couldn't mount as ext3 due to feature incompatibilities
+[    8.254354] EXT4-fs (loop1): couldn't mount as ext2 due to feature incompatibilities
+[    8.536228] F2FS-fs (mmcblk0p24): Can't find valid F2FS filesystem in 1th superblock
+[    8.536514] F2FS-fs (mmcblk0p24): Can't find valid F2FS filesystem in 2th superblock
+[    8.536678] F2FS-fs (mmcblk0p24): Can't find valid F2FS filesystem in 1th superblock
+[    8.536839] F2FS-fs (mmcblk0p24): Can't find valid F2FS filesystem in 2th superblock
+[    8.589759] FAT-fs (mmcblk0p1[179:1]): failed to mount!
+[    8.785454] FAT-fs (mmcblk0p2[179:2]): failed to mount!
+[   10.349937] init: /init.environ.rc: 13: export requires 2 arguments
+[   10.356214] init: invalid uid 'fm_radio'
+[   10.393350] power_supply bms: driver failed to report `current_avg' property: 4294967274
+[   10.624590] get_prop_batt_temp: get_bat_temp: adc_code(31825) physical (338)
+[   13.578811] power_supply bms: driver failed to report `current_avg' property: 4294967274
+[   13.617269] get_prop_batt_temp: get_bat_temp: adc_code(31759) physical (341)
+[   14.090052] get_prop_batt_temp: get_bat_temp: adc_code(31749) physical (342)
+[   14.149883] get_prop_batt_temp: get_bat_temp: adc_code(31749) physical (342)
+[   14.187593] get_prop_batt_temp: get_bat_temp: adc_code(31747) physical (342)
+[   15.443736] [rmnet0] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.444385] [rmnet1] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.445055] [rmnet2] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.445524] [rmnet3] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.445987] [rmnet4] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.446624] [rmnet5] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.447081] [rmnet6] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.447615] [rmnet7] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.448162] [rmnet_usb0] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.448712] [rev_rmnet0] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.449241] [rev_rmnet1] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.449792] [rev_rmnet2] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.450318] [rev_rmnet3] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.450847] [rev_rmnet4] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.451367] [rev_rmnet5] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.451908] [rev_rmnet6] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.452371] [rev_rmnet7] error: rmnet_ioct called for unsupported cmd[35585]
+[   15.452934] [rev_rmnet8] error: rmnet_ioct called for unsupported cmd[35585]
+[   19.643981] sec_bat_ext_ovp_confirm: cable_type (8)
+[   19.644093] sec_bat_ext_ovp_confirm: Ext OVP is set again
+[   23.086133] qpnp_batt_external_power_changed: skip qpnp_batt_external_power_changed
+[   23.112514] power_supply bms: driver failed to report `current_avg' property: 4294967274
+[   71.204090] pil-q6v5-lpass fe200000.qcom,lpass: adsp: Failed to locate adsp.mdt
+[   71.204272] adsp_state_notifier_fn: sysmon_send_event failed (-19).
+[   71.204361] L-Notify: Generel: 5
+[   71.204597] adsp-loader qcom,msm-adsp-loader.44: adsp_loader_do: pil get failed,
+[   71.204712] adsp-loader qcom,msm-adsp-loader.44: adsp_loader_do: Q6/ADSP image loading failed
+[   95.133977] sec_debug_check_crash_key code 172 value 1 state 0 enable 0
+[   95.193976] sec_debug_check_crash_key code 115 value 1 state 0 enable 0
+[   96.073962] sec_debug_check_crash_key code 172 value 0 state 0 enable 0
+[   96.083963] sec_debug_check_crash_key code 115 value 0 state 0 enable 0
+[   96.383972] sec_debug_check_crash_key code 172 value 1 state 0 enable 0
+[   96.463974] sec_debug_check_crash_key code 115 value 1 state 0 enable 0
+[   97.215694] sec_debug_check_crash_key code 116 value 1 state 0 enable 0
+[   97.215844] (sec_debug_set_upload_cause) 85
+
+No errors detected
