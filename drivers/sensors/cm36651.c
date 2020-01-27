@@ -76,6 +76,7 @@
 #define BLUE		0x02
 #define WHITE		0x03
 
+#define MIN_LIGHT_POLL_DELAY 200000000
 /* Proximity sensor */
 #define PS_CONF1	0x00
 #define PS_THD		0x01
@@ -273,7 +274,7 @@ static ssize_t cm36651_poll_delay_store(struct device *dev,
 		return err;
 
 	mutex_lock(&cm36651->power_lock);
-	if (new_delay != ktime_to_ns(cm36651->light_poll_delay)) {
+	if (new_delay != ktime_to_ns(cm36651->light_poll_delay) && new_delay >= MIN_LIGHT_POLL_DELAY) {
 		cm36651->light_poll_delay = ns_to_ktime(new_delay);
 		if (cm36651->power_state & LIGHT_ENABLED) {
 			cm36651_light_disable(cm36651);
@@ -1132,7 +1133,7 @@ static int cm36651_i2c_probe(struct i2c_client *client,
 	/* For factory test mode, we use timer to get average proximity data. */
 	/* prox_timer settings. we poll for light values using a timer. */
 	hrtimer_init(&cm36651->prox_timer, CLOCK_MONOTONIC, HRTIMER_MODE_REL);
-	cm36651->prox_poll_delay = ns_to_ktime(2000 * NSEC_PER_MSEC);/*2 sec*/
+	cm36651->prox_poll_delay = ns_to_ktime(1000 * NSEC_PER_MSEC);/*2 sec*/
 	cm36651->prox_timer.function = cm36651_prox_timer_func;
 
 	/* the timer just fires off a work queue request.  we need a thread
