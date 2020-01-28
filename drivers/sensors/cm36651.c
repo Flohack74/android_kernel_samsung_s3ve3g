@@ -52,9 +52,11 @@
 #define I2C_M_WR 0		/* for i2c Write */
 #define I2c_M_RD 1		/* for i2c Read */
 
-#define REL_RED		REL_HWHEEL
-#define REL_GREEN	REL_DIAL
-#define REL_BLUE	REL_WHEEL
+#ifdef CRAZY_HID_MODE
+        #define REL_RED		REL_HWHEEL
+        #define REL_GREEN	REL_DIAL
+        #define REL_BLUE	REL_WHEEL
+#endif
 #define REL_WHITE	REL_MISC
 
 /* slave addresses */
@@ -862,9 +864,11 @@ static void cm36651_work_func_light(struct work_struct *work)
 	cm36651_i2c_read_word(cm36651, CM36651_ALS, WHITE, &val_white);
 	mutex_unlock(&cm36651->read_lock);
 
+#ifdef CRAZY_HID_MODE
 	input_report_rel(cm36651->light_input_dev, REL_RED, (int)val_red+1);
 	input_report_rel(cm36651->light_input_dev, REL_GREEN, (int)val_green+1);
 	input_report_rel(cm36651->light_input_dev, REL_BLUE, (int)val_blue+1);
+#endif
 	input_report_rel(cm36651->light_input_dev, REL_WHITE, (int)val_white+1);
 	input_sync(cm36651->light_input_dev);
 #ifdef CM36651_DEBUG
@@ -1156,9 +1160,11 @@ static int cm36651_i2c_probe(struct i2c_client *client,
 
 	input_set_drvdata(cm36651->light_input_dev, cm36651);
 	cm36651->light_input_dev->name = "light_sensor";
+#ifdef CRAZY_HID_MODE
 	input_set_capability(cm36651->light_input_dev, EV_REL, REL_RED);
 	input_set_capability(cm36651->light_input_dev, EV_REL, REL_GREEN);
 	input_set_capability(cm36651->light_input_dev, EV_REL, REL_BLUE);
+#endif
 	input_set_capability(cm36651->light_input_dev, EV_REL, REL_WHITE);
 
 	ret = input_register_device(cm36651->light_input_dev);
