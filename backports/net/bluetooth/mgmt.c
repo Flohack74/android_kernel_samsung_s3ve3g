@@ -6621,9 +6621,9 @@ static void read_local_oob_ext_data_complete(struct hci_dev *hdev, u8 status,
 {
 	const struct mgmt_cp_read_local_oob_ext_data *mgmt_cp;
 	struct mgmt_rp_read_local_oob_ext_data *mgmt_rp;
-	u8 *h192, *r192, *h256, *r256;
+	u8 *h192 = NULL, *r192 = NULL, *h256 = NULL, *r256 = NULL;
 	struct mgmt_pending_cmd *cmd;
-	u16 eir_len;
+	u16 eir_len = 0;
 	int err;
 
 	BT_DBG("%s status %u", hdev->name, status);
